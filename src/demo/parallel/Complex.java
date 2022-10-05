@@ -70,7 +70,18 @@ public class Complex {
         im += b.im;
         return this;
     }
-    
+
+    public Complex sub(Complex b) {
+        re -= b.re;
+        im -= b.im;
+        return this;
+    }
+
+    public Complex mod(Complex b) {
+        re *= b.re;
+        im *= b.im;
+        return this;
+    }
 
     /**
      * Multiply operation.
